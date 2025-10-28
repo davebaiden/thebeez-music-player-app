@@ -1,0 +1,48 @@
+/* src/components/SongList.css */
+
+/* Grid container */
+.song-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Individual song card */
+.song-card {
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.song-card:hover {
+  background-color: #1f2937; /* Tailwind gray-800 */
+}
+
+/* Song image */
+.song-card img {
+  width: 128px; /* 32 Tailwind units */
+  height: 128px;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+/* Song title and artist */
+.song-card p {
+  margin-top: 0.25rem;
+}
+.song-card .title {
+  font-weight: 600;
+}
+.song-card .artist {
+  color: #9ca3af; /* Tailwind gray-400 */
+  font-size: 0.875rem;
+}
